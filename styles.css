@@ -1,0 +1,23 @@
+.ball {
+	width: 15px;
+	height: 15px;
+	border-style: solid;
+	border-width: 0rem;
+	border-color: #28a745;
+	border-radius: 50%;
+	background-color: #28a745;
+	position: absolute;
+	margin: 27px 0 0 8px;
+
+	animation-name: changecolor;
+	animation-duration: 0.8s;
+	animation-delay: 0.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+}
+
+@keyframes changecolor {
+	0% {background: #28a745;}
+	50% {background: #007bff;}
+	100% {background: #28a745;}
+}
