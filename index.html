@@ -5,6 +5,8 @@
 	<meta name=description content="">
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<title>We Love Maths <3</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="styles.css">
 </head>
@@ -14,7 +16,7 @@
 			<p class="h1 my-5 my-header font-bold">Polynomials Solver <span class="h5 text-muted font-italic">Using the general formula<span class="ball"></span></span></p>
 		</div>
 		<form>
-			<div class="form-group">
+			<div class="form-group container">
 
 				<label for="input-path-a">Enter the value of A</label>
 				<input type="num" class="form-control" id="input-path-a" placeholder="Enter something..."> <br>
@@ -24,19 +26,29 @@
 
 				<label for="input-path-c">Enter the value of C</label>
 				<input type="num" class="form-control" id="input-path-c" placeholder="Enter something..."> <br>
+				<div class="row">
+						
+					<div class="row row-cols-2 card-deck mb-4">
+						<div class="col">
+							<div class="card border-primary">
+								<div class="card-body">
+									<h5 class="card-title">Negative Value</h5>
+									<p class="card-text" id="neg-field">Here the negative value will appear</p>
+						    	</div>
+							</div>
+							
+						</div>
+					
 
-				<div class="card-deck mb-4">
-					<div class="card border-primary">
-						<div class="card-body">
-							<h5 class="card-title">Negative Value</h5>
-							<p class="card-text" id="neg-field">Here the negative value will appear</p>
-				    	</div>
-					</div>
-					<div class="card border-success">
-						<div class="card-body">
-							<h5 class="card-title">Positive Value</h5>
-							<p class="card-text" id="pos-field">Here the postive value will appear</p>
-				    	</div>
+						<div class="col">
+							<div class="card border-success">
+								<div class="card-body">
+									<h5 class="card-title">Positive Value</h5>
+									<p class="card-text" id="pos-field">Here the postive value will appear</p>
+						    	</div>
+							</div>
+							
+						</div>
 					</div>
 				</div>
 			<div>
